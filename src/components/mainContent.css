@@ -1,0 +1,9 @@
+.mainContentCont {
+    width: 100%;
+
+    border: 2px solid red;
+    
+    display: grid;
+    grid-template-columns: 10fr 6fr;
+
+}

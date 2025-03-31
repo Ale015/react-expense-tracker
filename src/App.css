@@ -1,0 +1,32 @@
+body {
+  display: flex;
+  flex-direction: column;
+
+  border: 2px solid green;
+
+  width: 99%;
+  min-height: 100vh;
+  
+  background: linear-gradient( -50deg, #211A1D, #223844); 
+}
+
+.AppContainer {
+  justify-self: center;
+  border: 9px solid purple;
+  min-width: 90%;
+}
+
+.titleLineCont{
+  display: flex;
+  border: 1px solid red;
+  width: 100%;
+}
+
+.title {
+  color: white;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: start;
+
+  letter-spacing: 1.5px;
+}

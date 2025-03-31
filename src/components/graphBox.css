@@ -1,0 +1,21 @@
+.graphCont {
+    border: 2px solid blue;
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.graphCont p {
+    margin: 0 0 20px 0;
+}
+
+#graph {
+    height: 200px;
+    width: 200px;
+
+    border-radius: 50%;
+    background-color: rgb(198, 126, 226);
+}

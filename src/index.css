@@ -1,0 +1,25 @@
+:root {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+
+
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: rgba(255, 255, 255, 0.87);
+  
+  display: flex;
+  flex-direction: column;
+  
+}
+
+body {
+  align-self: center;
+  
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+

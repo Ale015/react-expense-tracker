@@ -21,21 +21,7 @@ function App() {
       <NavBar filters={filters} setFilters={setFilters} onSearch={setAppliedFilters}/>
 
 
-      <MainContent/>
-      <div>
-
-      <ul>
-        {transactions.length === 0 ? (
-          <p>Nenhuma transação encontrada</p>
-        ) : (
-          transactions.map((t) => (
-            <li key={t.id}>
-              {t.title} - R$ {t.amount} - {t.date}
-            </li>
-          ))
-        )}
-      </ul>
-      </div>
+      <MainContent transactions={transactions}/>
     </div>
   )
 }

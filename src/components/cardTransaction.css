@@ -1,0 +1,9 @@
+#cardTransactionCont {
+    border: 3px solid rgb(231, 6, 6);
+    min-width: 150px;
+}
+
+#lineMain {
+    display: flex;
+    justify-content:space-between;
+}

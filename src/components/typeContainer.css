@@ -1,24 +1,44 @@
 .typeContainer {
-    border: 2px solid rgb(96, 168, 29);
+    /* border: 2px solid rgb(139, 148, 130); */
 
     display: flex;
     flex-direction: column;
 
     align-items: center;
 
-    min-width: 250px;
+    min-width: 26vw;
+
+    padding-bottom: 40px;
 }
 
-.greenIncomes h3{
+.titleTypeCont {
+    font-size: 1.5rem;
+    margin: 50px 0px 10px;
+}
+
+.greenIncomes .titleTypeCont{
     color: green;
 }
 
-.redExpenses h3{
+.redExpenses .titleTypeCont{
     color: red
 }
 
 
 #typeContainerArea {
-    border: 2px solid blue;
-    width: 80%;
+    width: 90%;
+
+    min-height: 520px;
+    padding: 20px 5px 20px 5px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    border-radius: 13px;
+    background: linear-gradient( -50deg, #211A1D, #223844); 
+    box-shadow: inset 1px 1px 18px 1px #211A1D,
+            inset -1px -1px 18px 1px #203541;
+
 }

@@ -1,7 +1,8 @@
 .mainContentCont {
     width: 100%;
+    height: 800px;
 
-    border: 2px solid red;
+    border: 2px solid rgb(255, 0, 0);
     
     display: grid;
     grid-template-columns: 10fr 6fr;

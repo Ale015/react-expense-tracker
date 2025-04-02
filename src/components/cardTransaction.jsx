@@ -1,24 +1,23 @@
 import React from 'react'
 import './cardTransaction.css'
 
-function CardTransaction({t_title, t_amount, t_date}) {
+function CardTransaction({t_title, t_amount, t_date, classType}) {
     
     const dateObject = new Date(t_date)
     const formatter = new Intl.DateTimeFormat("pt-BR", {year:"2-digit", month: "2-digit", day:"2-digit"})
     const formattedDate = formatter.format(dateObject)
   
     return (
-    <div id='cardTransactionCont'>
+    <div id='cardTransactionCont' className={`${classType}`}>
+            <h4 className='titleTransaction'>{t_title}</h4>
         <div id='lineMain'>
-            <p>{t_title}</p>
-            <p>{t_amount}</p>
+            <div className='amountLine'>
+                <p className='ra'>R$</p><p className='amount'>{t_amount}</p>
+            </div>
+            <p className='date'>{formattedDate}</p>
         </div>
-        <p>{formattedDate}</p>
     </div>
   )
 }
 
 export default CardTransaction
-
-
-// 2025-03-2700:00:00.000Z

@@ -8,6 +8,8 @@ body {
   min-height: 100vh;
   
   background: linear-gradient( -50deg, #211A1D, #223844); 
+
+  font-family: 'Roboto', cursive;
 }
 
 .AppContainer {

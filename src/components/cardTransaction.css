@@ -1,9 +1,101 @@
 #cardTransactionCont {
-    border: 3px solid rgb(231, 6, 6);
+    border: 3px solid rgb(255, 0, 0);
     min-width: 150px;
+    width: 15vw;
+
+    margin: 8px;
+    padding: 15px;
+
 }
 
 #lineMain {
     display: flex;
     justify-content:space-between;
+
+    margin: 0px;
+    padding: 0px;
+}
+
+.amountLine {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+}
+
+.titleTransaction {
+    margin: 0px 0px 6px;
+    padding: 0px;
+}
+
+.ra {
+    margin: 2px 2.5px 1.3px 0px;
+    padding: 0px;
+
+    font-size: 0.6rem;
+    align-self: end;
+
+    font-style: italic;
+    font-weight: bold;
+    
+}
+
+.greenIncomes .ra {
+    color: #90a077;
+} 
+
+.redExpenses .ra {
+    color: #f37d6d;
+}
+
+.greenIncomes #cardTransactionCont {
+
+    background: rgba(0, 255, 89, 0.055);
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.7px);
+    -webkit-backdrop-filter: blur(3.7px);
+    border: 1px solid rgba(0, 255, 89, 0.068);
+
+
+
+}
+
+.redExpenses #cardTransactionCont {
+    background: rgba(255, 60, 0, 0.055);
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    border: 1px solid rgba(255, 0, 0, 0.116);
+
+}
+
+
+.greenIncomes .titleTransaction{
+    
+    color: #AABD8C;
+}
+
+
+.redExpenses .titleTransaction{
+    
+    color: #f35f4b;
+}
+
+.amount {
+    margin: 0px;
+    padding: 0px;
+
+    font-weight: bold;
+}
+
+.date {
+    color: rgba(255, 255, 255, 0.596);
+    margin: 0px 0px 0px 0px;
+
+
+    text-align: end;
+
+    font-size: 0.8rem;
+    align-self: flex-end;
 }

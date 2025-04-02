@@ -7,8 +7,8 @@ import './resumeContainer.css'
 function ResumeContainer() {
   return (
     <div className='resumeCont'>
-        <GraphBox/>
         <ValuesDashboard/>
+        <GraphBox/>
     </div>
   )
 }

@@ -9,7 +9,7 @@ function TypeContainer({title, transactions, classType}){
     return (
 
         <div className={`typeContainer ${classType}`}>
-            <h3>{title}</h3>
+            <h3 className="titleTypeCont">{title}</h3>
             <div id="typeContainerArea">
                 {transactions.length === 0 ? (
                 <p>Nenhuma transação encontrada</p>
@@ -21,6 +21,8 @@ function TypeContainer({title, transactions, classType}){
                             t_title={t.title}
                             t_amount={t.amount}
                             t_date={t.date}
+                            
+                            classVar={classType}
                             />
 
                     ))
@@ -35,12 +37,3 @@ function TypeContainer({title, transactions, classType}){
 }
 
 export default TypeContainer
-
-// {
-//     transactions.map((t) => (   
-//     <li key={t.id}>
-//     {t.title} - R$ {t.amount} - {t.date}
-//     </li>
-
-// ))
-// }

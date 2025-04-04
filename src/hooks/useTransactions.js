@@ -19,13 +19,13 @@ export function useTransactions(filters){
                     if (filters.orderBy) params.append("orderBy", filters.orderBy);
 
                     const finalUrl = `${url}?${params.toString()}`;
-                    console.log("Requisição para:", finalUrl); // 🔥 Debug
-
+                    
                     const response = await fetch(finalUrl);
                     const data = await response.json();
 
-                    setTransactions(data)
                     console.log(data)
+
+                    setTransactions(data)
                 } catch (error) {
                     console.log("Erro ao buscar Transações")                    
                 }

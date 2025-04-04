@@ -19,7 +19,7 @@ function NavBar({ filters, setFilters, onSearch }) {
             return newFilters;
         });
     };
-
+    
     return (
         <div className="navBarCont">
             <button onClick={handleOrderByToggle}>
@@ -38,7 +38,7 @@ function NavBar({ filters, setFilters, onSearch }) {
                 onChange={(e) => handleFilterChange("endDate", e.target.value)}
             />
 
-            <button onClick={() => onSearch(filters)}>Search</button>
+            <button onClick={() => onSearch({...filters})}>Search</button>
         </div>
     );
 }

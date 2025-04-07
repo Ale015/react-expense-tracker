@@ -3,6 +3,7 @@ import MainContent from './components/mainContent'
 import './App.css'
 import { useState , useEffect } from 'react';
 
+import { useDashboard } from './hooks/useDashboard';
 import { useTransactions } from './hooks/useTransactions';
 
 function App() {
@@ -11,7 +12,7 @@ function App() {
   const [appliedFilters, setAppliedFilters] = useState(filters);
 
   const { transactions } = useTransactions(appliedFilters);
-
+  const { dashboard } = useDashboard(appliedFilters)
 
   return (
     <div className='AppContainer'>
@@ -20,6 +21,9 @@ function App() {
       </div>
       <NavBar filters={filters} setFilters={setFilters} onSearch={setAppliedFilters}/>
 
+        <p>{dashboard.total}</p>
+        <p>{dashboard.totalIncomes}</p>
+        <p>{dashboard.totalExpenses}</p>
 
       <MainContent transactions={transactions}/>
     </div>

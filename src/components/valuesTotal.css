@@ -1,0 +1,120 @@
+#totalCont {
+    min-height: 50px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin: 5px 10px 15px 10px;
+    padding: 0px 2vw;
+}
+
+#totalCont.blueTotal {
+    background: rgba(0, 255, 89, 0.055);
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.7px);
+    -webkit-backdrop-filter: blur(3.7px);
+    border: 1px solid rgba(0, 255, 89, 0.068); 
+    
+}
+
+#totalCont.greenTotal {
+    background: rgba(0, 255, 89, 0.055);
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.7px);
+    -webkit-backdrop-filter: blur(3.7px);
+    border: 1px solid rgba(0, 255, 89, 0.068);
+
+} 
+
+
+#totalCont.redTotal {
+    background: rgba(255, 60, 0, 0.055);
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    border: 1px solid rgba(255, 0, 0, 0.116);
+
+}
+
+.totalTitle {
+
+    align-self: center;
+    font-weight: 700;
+    font-size: 1.2rem;
+
+    margin: 0px;
+} 
+
+.valueBox {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+
+
+.moneySign {
+    margin: 6px 2.5px 1.3px 0px;
+    padding: 0px;
+
+    font-size: 0.7rem;
+    align-self: center;
+
+    font-style: italic;
+    font-weight: bold;
+}
+
+.valueTotal {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+
+.greenTotal .totalTitle {
+    color: #d7eeb3;
+}
+
+.greenTotal .moneySign {
+    color: #90a077;
+    
+}
+
+.greenTotal .valueTotal {
+    color: white;
+    
+}
+
+
+.blueTotal .totalTitle {
+    color: #cfe5fa;
+    
+}
+
+.blueTotal .moneySign {
+    color: #65a8e7;
+    
+}
+
+.blueTotal .valueTotal {
+    color: white;
+    
+}
+
+.redTotal .totalTitle {
+    
+    color: #f35f4b;
+}
+
+.redTotal .moneySign {
+    
+    color: #f35f4b;
+}
+
+.redTotal .valueTotal {
+    color: white;
+
+}

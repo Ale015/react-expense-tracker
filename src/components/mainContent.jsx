@@ -3,12 +3,12 @@ import TransactionsContainer from './transactionsContainer'
 import './mainContent.css'
 import ResumeContainer from './resumeContainer'
 
-function MainContent({transactions}){
+function MainContent({transactions, dashboard}){
 
     return (
         <div className="mainContentCont">
             <TransactionsContainer transactions={transactions}/>
-            <ResumeContainer/>
+            <ResumeContainer dashboard={dashboard}/>
         </div>
     )
 }

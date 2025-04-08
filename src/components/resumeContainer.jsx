@@ -4,11 +4,11 @@ import ValuesDashboard from './valuesDashboard'
 
 import './resumeContainer.css'
 
-function ResumeContainer() {
+function ResumeContainer({ dashboard }) {
   return (
     <div className='resumeCont'>
-        <ValuesDashboard/>
-        <GraphBox/>
+        <ValuesDashboard dashboard={dashboard}/>
+        <GraphBox dashboard={dashboard}/>
     </div>
   )
 }

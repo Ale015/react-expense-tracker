@@ -1,6 +1,8 @@
 .graphCont {
-    border: 2px solid blue;
-    padding: 30px;
+    margin-top: 35px;
+    border-top: 1px solid rgba(177, 177, 177, 0.103);
+    border-radius: 2px;
+    padding: 20px;
 
     display: flex;
     flex-direction: column;
@@ -8,8 +10,18 @@
 
 }
 
-.graphCont p {
+.graphCont h3 {
     margin: 0 0 20px 0;
+
+    padding: 0px;
+    margin: 0px 0px 20px;
+    text-align: center;
+    
+
+    color: rgba(203, 255, 255, 0.459);
+    font-weight: 500;
+    font-size: 1.2rem;
+
 }
 
 #graph {

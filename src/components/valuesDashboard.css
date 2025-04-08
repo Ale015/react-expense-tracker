@@ -1,3 +1,19 @@
 .valuesDashboard {
-    border: 3px solid black
+    padding: 0px;
+    margin: 0px 0px;
+}
+
+
+.resumeTitle {
+    
+    border-top: 1px solid rgba(177, 177, 177, 0.075);
+
+    padding: 10px 0px 0px;
+    margin: 16px 0px 10px;
+    text-align: center;
+    
+
+    color: rgba(203, 255, 255, 0.459);
+    font-weight: 500;
+    font-size: 1.2rem;
 }

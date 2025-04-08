@@ -3,7 +3,7 @@ import { React, useState, useEffect } from "react";
 
 export function useDashboard(filters){
 
-    const [dashboard, setDashboard] = useState([])
+    const [dashboard, setDashboard] = useState({total:0, totalIncomes:0, totalExpenses:0})
 
     useEffect(()=>{
 

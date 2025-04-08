@@ -1,6 +1,9 @@
 import React from 'react';
 import './navBar.css';
 
+import { ArrowDown01, ArrowUp10 , Plus, Search } from 'lucide-react';
+
+
 function NavBar({ filters, setFilters, onSearch }) {
     const formatDate = (date) => (date ? new Date(date).toISOString().split("T")[0] : "");
 
@@ -22,23 +25,25 @@ function NavBar({ filters, setFilters, onSearch }) {
     
     return (
         <div className="navBarCont">
-            <button onClick={handleOrderByToggle}>
-                {filters.orderBy === "ASC" ? "⬆️ Mais antigos" : "⬇️ Mais recentes"}
+            <button  className='inputs-navBar' onClick={handleOrderByToggle}>
+                {filters.orderBy === "ASC" ? <ArrowDown01/> : <ArrowUp10/>}
             </button>
 
-            <input
+            <input className='inputs-navBar' 
                 type="date"
                 value={formatDate(filters.startDate)}
                 onChange={(e) => handleFilterChange("startDate", e.target.value)}
             />
 
-            <input
+            <input className='inputs-navBar' 
                 type="date"
                 value={formatDate(filters.endDate)}
                 onChange={(e) => handleFilterChange("endDate", e.target.value)}
             />
 
-            <button onClick={() => onSearch({...filters})}>Search</button>
+            <button className='inputs-navBar' onClick={() => onSearch({...filters})}><Search className='searchButton' size={20}/></button>
+
+            <button id='addButton' className="inputs-navBar"> <Plus className='plusButton' size={24}/></button>
         </div>
     );
 }

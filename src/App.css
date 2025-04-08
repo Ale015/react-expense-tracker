@@ -2,25 +2,25 @@ body {
   display: flex;
   flex-direction: column;
 
-  border: 2px solid green;
+  /* border: 2px solid green; */
 
   width: 99%;
   min-height: 100vh;
   
   background: linear-gradient( -50deg, #211A1D, #223844); 
 
-  font-family: 'Roboto', cursive;
+  font-family: "Montserrat", 'Roboto', cursive;
 }
 
 .AppContainer {
   justify-self: center;
-  border: 9px solid purple;
+  /* border: 9px solid purple; */
   min-width: 90%;
 }
 
 .titleLineCont{
   display: flex;
-  border: 1px solid red;
+  border-bottom: 1px solid rgba(177, 177, 177, 0.185);
   width: 100%;
 }
 
@@ -30,5 +30,6 @@ body {
   display: flex;
   align-items: start;
 
+  margin: 20px 0px 10px;
   letter-spacing: 1.5px;
 }

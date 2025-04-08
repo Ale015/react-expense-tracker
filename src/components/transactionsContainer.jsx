@@ -20,8 +20,8 @@ function TransactionsContainer({transactions}) {
   
   return (
     <div className='transactionsCont'> 
-      <TypeContainer title="Incomes" classType="greenIncomes" transactions={arrIncomes}/>
-      <TypeContainer title="Expenses" classType="redExpenses" transactions={arrExpenses}/>  
+      <TypeContainer title="Receitas" classType="greenIncomes" transactions={arrIncomes}/>
+      <TypeContainer title="Despesas" classType="redExpenses" transactions={arrExpenses}/>  
     </div>
   )
 }

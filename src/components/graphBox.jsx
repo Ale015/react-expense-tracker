@@ -5,7 +5,7 @@ import './graphBox.css'
 function GraphBox() {
   return (
     <div className='graphCont'>
-        <p>Visualização Gráfica</p>
+        <h3>Visualização Gráfica</h3>
         <div id="graph">
             
         </div>

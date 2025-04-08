@@ -20,12 +20,7 @@ function App() {
         <h1 className="title"> 🎍 Expense Tracker</h1>
       </div>
       <NavBar filters={filters} setFilters={setFilters} onSearch={setAppliedFilters}/>
-
-        <p>{dashboard.total}</p>
-        <p>{dashboard.totalIncomes}</p>
-        <p>{dashboard.totalExpenses}</p>
-
-      <MainContent transactions={transactions}/>
+      <MainContent transactions={transactions} dashboard={dashboard}/>
     </div>
   )
 }

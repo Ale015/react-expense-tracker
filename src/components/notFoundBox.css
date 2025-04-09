@@ -1,0 +1,19 @@
+.notFoundBoxCont {
+    border: 1px dashed gray;
+    border-radius: 12px;
+
+    margin: 8px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    padding: 15px 0px 0px;
+}
+
+.notFoundBoxCont p {
+    margin-top: 10px;
+    color: gray;
+    text-align: center;
+}

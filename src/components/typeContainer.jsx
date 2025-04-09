@@ -1,7 +1,7 @@
 import React from "react";
 import './typeContainer.css';
 import CardTransaction from "./cardTransaction";
-
+import NotFoundBox from "./notFoundBox";
 
 function TypeContainer({title, transactions, classType}){
 
@@ -12,7 +12,7 @@ function TypeContainer({title, transactions, classType}){
             <h3 className="titleTypeCont">{title}</h3>
             <div id="typeContainerArea">
                 {transactions.length === 0 ? (
-                <p>Nenhuma transação encontrada</p>
+                    <NotFoundBox/>
                 ) : (
 
                     transactions.map((t)=>(

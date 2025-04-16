@@ -1,0 +1,121 @@
+.modal-overlay {
+position: fixed;
+inset: 0;
+background: rgba(0, 0, 0, 0.473);
+display: flex;
+align-items: center;
+justify-content: center;
+z-index: 999;
+}
+
+.modal-container {
+
+background: rgba(3, 62, 70, 0.466);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.315);
+backdrop-filter: blur(10px);
+-webkit-backdrop-filter: blur(10px);
+border: 1px solid rgba(255, 255, 255, 0.082);
+
+padding: 20px;
+width: 100%;
+max-width: 400px;
+}
+
+.modal-container h3 {
+    margin-top: 0px;
+    margin-bottom: 20px;
+
+    color: rgba(143, 250, 250, 0.664);
+}
+
+.modal-container form {
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.modal-container input,
+.modal-container select {
+    padding: 8px;
+    font-size: 1rem;
+    
+    background: none ;
+    border: 1px solid rgba(0, 255, 234, 0.219);;
+    border-radius: 8px;
+    color: rgba(73, 255, 231, 0.849);
+
+    margin: 2px 0px 10px 0px;
+
+    font-weight: 600;
+
+}
+
+.modal-container select:hover {
+    cursor:pointer;
+}
+
+.dateInput {
+    cursor:text ;
+}
+
+.modal-container input::placeholder {
+    color: rgba(73, 255, 231, 0.26);
+}
+
+
+.modal-container .buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+        
+    margin-top: 20px;
+}
+
+.modal-container button {
+    
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    
+    cursor: pointer;
+    
+    padding: 8px;
+}
+
+.saveBtn {
+    border: 1px solid rgba(0, 158, 8, 0.452);
+    background-color: rgba(0, 201, 107, 0.822);
+    color: rgb(219, 250, 219);
+    transition: all 0.3s ease;
+}
+
+.cancelBtn {
+    border: 1px solid rgba(248, 163, 163, 0.253);
+    background-color: rgb(128, 9, 0);
+    color: rgba(248, 163, 163, 0.986);
+    transition: all 0.3s ease;
+    
+}
+
+.saveBtn:hover {
+    border: 1px solid rgb(2, 170, 61);
+    background-color: rgba(0, 180, 95, 0.9);
+    color: rgb(192, 252, 192);
+}
+
+.cancelBtn:hover {
+    border: 1px solid rgba(255, 80, 80, 0.8);
+    background-color: rgb(150, 20, 15);
+    color: rgb(255, 205, 205);
+}
+
+.modal-container p{
+
+    margin: 0px;
+    padding: 0px;
+
+    font-size: 14px;
+    
+    color:rgba(220, 241, 245, 0.685);
+}

@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './navBar.css';
 
 import { ArrowDown01, ArrowUp10 , Plus, Search } from 'lucide-react';
+
+import NewTransactionModal from './newTransactionModal'
 
 
 function NavBar({ filters, setFilters, onSearch }) {
@@ -22,6 +24,15 @@ function NavBar({ filters, setFilters, onSearch }) {
             return newFilters;
         });
     };
+
+
+    const [showModal, setShowModal ] = useState(false);
+
+    function handleSuccess(){
+        console.log("Transação salva com sucesso! ");
+        onSearch({...filters})
+    }
+
     
     return (
         <div className="navBarCont">
@@ -43,7 +54,16 @@ function NavBar({ filters, setFilters, onSearch }) {
 
             <button className='inputs-navBar' onClick={() => onSearch({...filters})}><Search className='searchButton' size={20}/></button>
 
-            <button id='addButton' className="inputs-navBar"> <Plus className='plusButton' size={24}/></button>
+            <button id='addButton' className="inputs-navBar" onClick={()=> setShowModal(true)}> <Plus className='plusButton' size={24}/></button>
+        
+
+            <NewTransactionModal
+                isOpen={showModal}
+                onClose={() => setShowModal(false)}
+                onSuccess={handleSuccess}
+            />
+
+
         </div>
     );
 }

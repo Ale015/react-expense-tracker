@@ -14,6 +14,7 @@
 .titleTypeCont {
     font-size: 1.5rem;
     margin: 12px 0px 10px;
+    
 }
 
 .greenIncomes .titleTypeCont{
@@ -28,7 +29,9 @@
 #typeContainerArea {
     width: 90%;
 
-    min-height: 520px;
+    height: 520px;
+    min-height: fit-content;
+
     padding: 20px 5px 20px 5px;
 
     display: flex;
@@ -39,6 +42,8 @@
     border-radius: 13px;
     background: linear-gradient( -50deg, #211A1D, #223844); 
     box-shadow: inset 1px 1px 18px 1px #211A1D,
-            inset -1px -1px 18px 1px #203541;
+                inset -1px -1px 18px 1px #203541;
+
+    
 
 }

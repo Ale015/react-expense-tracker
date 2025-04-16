@@ -9,3 +9,17 @@
 
     overflow-y: auto;
 }
+
+
+.transactionsCont::-webkit-scrollbar {
+    width: 8px;
+}
+
+
+
+.transactionsCont::-webkit-scrollbar-thumb {
+    background-color: #009ccc25;
+    border-radius: 5px;
+    border: 2px solid #1e1e1e00;
+
+}

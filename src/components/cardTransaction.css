@@ -16,6 +16,40 @@
     padding: 0px;
 }
 
+
+.headLine {
+    display: flex;
+    justify-content: space-between;
+}
+
+.deleteButton {
+    
+    position: relative;
+    top: -12px;
+    right: -12px;
+
+    width: 35px;
+
+    background: transparent;
+    border: none;
+}
+
+.trash2 {
+
+    margin: -2px;
+    padding: 0px;
+
+    background: transparent;
+    
+    opacity: 0.1;
+    transition: opacity 0.5s ease-in ;
+}
+
+.trash2:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
 .amountLine {
     margin: 0px;
     padding: 0px;

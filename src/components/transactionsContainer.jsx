@@ -2,7 +2,7 @@ import React from 'react'
 import './transactionsContainer.css'
 import TypeContainer from './typeContainer'
 
-function TransactionsContainer({transactions}) {
+function TransactionsContainer({transactions, onDeleteTransaction}) {
 
   let arrIncomes = []
   let arrExpenses = []
@@ -20,8 +20,8 @@ function TransactionsContainer({transactions}) {
   
   return (
     <div className='transactionsCont'> 
-      <TypeContainer title="Receitas" classType="greenIncomes" transactions={arrIncomes}/>
-      <TypeContainer title="Despesas" classType="redExpenses" transactions={arrExpenses}/>  
+      <TypeContainer title="Receitas" classType="greenIncomes" transactions={arrIncomes} onDeleteTransaction={onDeleteTransaction}/>
+      <TypeContainer title="Despesas" classType="redExpenses" transactions={arrExpenses} onDeleteTransaction={onDeleteTransaction}/>  
     </div>
   )
 }

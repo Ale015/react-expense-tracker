@@ -5,6 +5,8 @@ import { useState , useEffect } from 'react';
 
 import { useDashboard } from './hooks/useDashboard';
 import { useTransactions } from './hooks/useTransactions';
+import { useDeleteTransaction } from './hooks/useDeleteTransaction';
+import { AwardIcon } from 'lucide-react';
 
 function App() {
 
@@ -14,13 +16,22 @@ function App() {
   const { transactions } = useTransactions(appliedFilters);
   const { dashboard } = useDashboard(appliedFilters)
 
+
+  const { deleteTransaction } = useDeleteTransaction();
+
+  const handleDeleteTransaction = async (id) => {
+    await deleteTransaction(id);
+
+    setAppliedFilters({...appliedFilters})
+  }
+
   return (
     <div className='AppContainer'>
       <div className='titleLineCont'>
         <h1 className="title"> 🎍 Expense Tracker</h1>
       </div>
       <NavBar filters={filters} setFilters={setFilters} onSearch={setAppliedFilters}/>
-      <MainContent transactions={transactions} dashboard={dashboard}/>
+      <MainContent transactions={transactions} dashboard={dashboard} onDeleteTransaction={handleDeleteTransaction}/>
     </div>
   )
 }
